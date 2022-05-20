@@ -1,0 +1,66 @@
+@import './css/index.css';
+
+@import './css/bot.css';
+@import './css/header.css';
+@import './css/nav.css';
+@import './css/slider.css';
+@import './css/news.css';
+@import './css/actividad.css';
+@import './css/portada.css';
+@import './css/destacados.css';
+
+:root{
+  --gris: #d1c7c7;
+  --morado: #8F80AF;
+  --azulclaro: #14ABF4;
+  --rojo: #A80521;
+  --boton: #8F80AF;
+  --verde: #bfcc6b;
+
+  --violeta: #9579BC;
+  --aguamarina: #6AA4A9;
+  --azul_oscuro: #173642;
+  --color_texto: #333;
+  --color_texto_claro: #6a6a6a;
+
+  --regular: 400;
+  --bold: 700;
+  --black: 900;
+  --titulo: 'Playfair Display', serif;
+  --texto: 'Lato', sans-serif;
+
+   /* Fuentes Desktop*/
+  --fuente5: 49px;
+  --fuente4: 39px;
+  --fuente3: 31px;
+  --fuente2: 25px;
+  --fuente1: 20px;
+  --fuente0: 16px;
+  --fuente-1: 13px;
+  --fuente-2: 10px;
+  --fuente-3: 8px;
+  /* Fuentes Tablet*/
+  --fuente5_tablet: 3.5vw;
+  --fuente4_tablet: 2.7vw;
+  --fuente3_tablet: 2.2vw;
+  --fuente2_tablet: 1.71vw;
+  --fuente1_tablet: 1.42vw;
+  --fuente0_tablet: 1.2vw;
+  --fuente-1_tablet: 0.93vw;
+  --fuente-2_tablet: 0.71vw;
+  --fuente-3_tablet: 0.57vw;
+  /* Fuentes Mobile*/
+  --fuente5_mobile: 12.25vw;
+  --fuente4_mobile: 8.5vw;
+  --fuente3_mobile: 7.8vw;
+  --fuente2_mobile: 6.25vw;
+  --fuente1_mobile: 5vw;
+  --fuente0_mobile: 4vw;
+  --fuente-1_mobile: 3.25vw;
+  --fuente-2_mobile: 2.5vw;
+  --fuente-3_mobile: 2vw;
+}
+
+@custom-media --desktop (min-width: 1280px);
+@custom-media --tablet (min-width: 600px) and (max-width: 1200px);
+@custom-media --mobile (max-width: 600px);
