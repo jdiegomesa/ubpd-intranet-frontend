@@ -1,0 +1,145 @@
+input.um-do-search.um-button {
+  background-color: var(--violeta);
+  border-radius: 50vw !important;
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 18px !important;
+  transition-duration: .5s;
+  cursor: pointer;
+  &:hover{
+    background-color: var(--aguamarina);
+  }
+}
+input.um-search-line {
+  font-family: var(--texto);
+  font-weight: 400;
+  color: var(--color_texto) !important;
+  border-radius: 8px !important;
+}
+.um-member-directory-header-row {
+  font-family: var(--texto);
+  font-weight: var(--regular);
+}
+
+a.um-member-directory-sorting-a-text {
+  font-weight: var(--bold);
+  color: #333;
+}
+
+span.select2-selection.select2-selection--single {
+  border-radius: 8px !important;
+  font-size: var(--fuente0) !important;
+}
+
+.um-directory .um-member-directory-header .um-member-directory-header-row .um-filtered-line .um-members-filter-tag{
+  background-color: transparent !important;
+}
+
+.um-directory .um-member-directory-header .um-member-directory-header-row .um-filtered-line .um-clear-filters a {
+    font-family: var(--texto);
+    font-weight: 700;
+    color: var(--color_texto_claro);
+}
+
+.um-directory .um-members-wrapper .um-members-total {
+  font-family: var(--texto);
+  text-align: right;
+  font-size: var(--fuente0) !important;
+}
+
+.um-directory .um-members-wrapper .um-members.um-members-list .um-member .um-member-card-container .um-member-photo{
+  width: 120px !important;
+}
+
+.um-directory .um-members-wrapper .um-members.um-members-list .um-member .um-member-card-container .um-member-photo a{
+  width: 120px !important;
+  height: 120px !important;
+}
+
+.um-directory .um-members-wrapper .um-members.um-members-list .um-member .um-member-card-container .um-member-photo a img {
+  border: solid 4px var(--violeta) !important;
+  width: 120px !important;
+  height: 120px !important;
+}
+
+.um-directory .um-members-wrapper .um-members.um-members-list .um-member .um-member-card-container .um-member-photo {
+  margin-right: 30px !important;
+}
+
+.um-directory .um-members-wrapper .um-members.um-members-list .um-member .um-member-card-container {
+  align-items: center !important;
+}
+
+.um-directory .um-members-wrapper .um-members.um-members-list .um-member .um-member-card-container .um-member-card .um-member-card-content .um-member-card-header .um-member-name a {
+  font-size: 22px !important;
+  color: var(--color_texto) !important;
+  font-family: var(--texto);
+  margin-bottom: 3px;
+}
+
+.um-directory .um-members-wrapper .um-members.um-members-list .um-member .um-member-card-container .um-member-card .um-member-card-content .um-member-tagline {
+  font-size: var(--fuente0) !important;
+  font-family: var(--texto);
+  color: var(--color_texto) !important;
+}
+
+.um-member-tagline.um-member-tagline-Dependencia {
+  font-weight: 700;
+  color: #000 !important;
+  margin: 8px 0 16px;
+}
+
+.um-member-tagline.um-member-tagline-user_email a {
+  color: var(--violeta) !important;
+  font-size: 14px;
+}
+
+.um-directory .um-members-wrapper .um-members .um-member {
+  border: none !important;
+  border-bottom: solid 2px var(--violeta) !important;
+  padding-bottom: 20px !important;
+}
+
+.um-directory .um-members-wrapper .um-members.um-members-list .um-member .um-member-card-footer .um-member-card-reveal-buttons .um-member-more a i{
+  color: var(--violeta);
+}
+
+.um-meta span:first-child{
+  font-family: var(--texto);
+  font-size: var(--fuente0);
+}
+.um-profile.um .um-name a {
+  font-size: var(--fuente3);
+}
+.um-meta span a {
+  font-family: var(--texto);
+  font-weight: var(--bold);
+  color: var(--aguamarina);
+}
+.um-7961.um .um-profile-body {
+  max-width: 820px;
+}
+.um-field-label label {
+  font-size: 25px !important;
+  font-family: 'Lato';
+  font-weight: 700;
+}
+.um-name {
+  margin-top: 8px;
+}
+.um-profile.um-viewing .um-field-label{
+  border: none;
+}
+.um-field-area {
+  font-family: var(--texto);
+  font-weight: var(--regular);
+  font-size: var(--fuente1);
+  margin: 6px 0 6px 16px;
+  color: var(--color_texto);
+}
+.um-field-block {
+  border-bottom: 3px solid var(--violeta);
+  & h3{
+    color: var(--violeta);
+  }
+}

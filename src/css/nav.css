@@ -5,6 +5,13 @@
   border-bottom: 1px solid var(--color_texto_claro);
   padding: 0 calc(50vw-640px);
   box-sizing: content-box;
+  @media(--desktop){
+    &.fixed{
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+  }
   @media(--tablet){
     width: 90vw;
     padding: 0 calc(5vw);
@@ -42,13 +49,16 @@
     position: fixed;
     top: 0;
     z-index: 50;
+    @media(--mobile){
+      top: 12vh;
+    }
   }
   
   &-menu{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 12px 0;
     @media(--tablet){
       padding: .0.9vw 0;
@@ -62,15 +72,15 @@
     &-item{
       position: relative;
       flex: inherit;
-      max-width: 250px;
+      max-width: 300px;
       text-align: left;
       list-style: none;
       align-items: center;
       display: flex;
-      padding: 0 20px;
+      padding: 0 28px;
       border-right: solid 2px var(--color_texto_claro);
       @media(--tablet){
-        padding: 0 1.5vw;
+        padding: 0 2vw;
       }
       @media(--mobile){
         width: 100vw;
@@ -80,6 +90,9 @@
         padding: 0 15vw;
         justify-content: center;
         flex-direction: column;
+      }
+      &:first-of-type{
+        border-left: solid 2px var(--color_texto_claro);
       }
       &.opened, &[aria-expanded="true"], &:focus-within{
         & .UBPDNav-menu-item-corner{
@@ -130,58 +143,33 @@
         overflow: hidden;
         max-height: 0;
         background-color: #f6f8f9;
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+        grid-template-rows: repeat(auto-fit,minmax(35px,1fr));
+        width: max-content;
         z-index: 100;
         min-width: 178px;
+        grid-auto-flow: column;
         padding: 0;
+        @media(--tablet){
+          padding-top: 1vw;
+        }
         @media(--mobile){
           position: relative;
           background-color: transparent;
           transition-duration: .5s;
+          padding-top: 0;
+          display: flex;
+          flex-direction: column;
         }
-        &::before{
-          /* Temporalmente desactivado
-          content: '';
-          */
-          display: block;
-          position: absolute;
-          margin: 0 auto;
-          top: 0;
-          left: calc(50% - 87px);
-          padding-bottom: 5px;
-          width: 178px;
-          height: 100px;
-          background: transparent center no-repeat;
-          @media(--mobile){
-            padding-bottom: 1vh;
-            height: 15vh;
-            width: 27vh;
-          }
-        }
-        &-container{
-          display: grid;
-          grid-gap: 5px;
-          grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
-          grid-template-rows: repeat(auto-fit,minmax(35px,1fr));
-          width: max-content;
-          max-height: calc(100vh - 180px);
-          grid-auto-flow: column;
-          padding-top: 12px;
-          @media(--tablet){
-            padding-top: 1vw;
-          }
-          @media(--mobile){
-            padding-top: 0;
-            display: flex;
-            flex-direction: column;
-            max-height: none;
-          }
-        }
-        &-item{
-          padding: 0 15px;
+        &>.UBPDNav-menu-item{
+          padding: 8px 24px;
           display: flex;
           justify-content: center;
           align-items: center;
           cursor: pointer;
+          border: none;
           & a{
             font-family: var(--texto);
             font-weight: var(--regular);
@@ -189,7 +177,7 @@
             text-align: center;
             color: var(--color_texto_claro);
             font-size: var(--fuente0);
-            max-width: 250px;
+            max-width: 300px;
             padding: 5px 0;
             min-height: max-content;
             @media(--tablet){
@@ -216,8 +204,7 @@
         &:hover, &:focus-within, &:active, &[aria-expanded="true"]{
           & .UBPDNav-menu-item-submenu{
             max-height: calc(100vh - 180px);
-            /* Temporalmente desactivado
-            padding-top: 110px;*/
+            padding: 12px 0 0 0;
           }
         }
       }

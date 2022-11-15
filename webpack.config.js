@@ -60,7 +60,7 @@ module.exports={
     new webpack.DllReferencePlugin({
       manifest: require('./modules-manifest.json')
     }),
-    new CleanWebpackPlugin(['css', 'js', 'assets'], {root: path.resolve(__dirname, 'dist')})
+    new CleanWebpackPlugin(['css'], {root: path.resolve(__dirname, 'dist')})
   ],
   optimization: {
 		minimizer: [

@@ -7,7 +7,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
   <title>UBPD</title>
 </head>
 <body>
@@ -107,23 +107,21 @@
         <div class="UBPDNav-menu-item-corner" onclick="UBPDopen('UBPDuno', 'UBPDNav-menu-item');"></div>
         <a href="#" role="link">La UBPD</a>
         <ul class="UBPDNav-menu-item-submenu" role="menu">
-          <div class="UBPDNav-menu-item-submenu-container">
-            <li class="UBPDNav-menu-item-submenu-item" role="menuitem">
-              <a href="https://www.UBPD.gov.co/sala-de-prensa/Paginas/Comunicados.aspx#Default=%7B%22k%22:%22SPContentType:Slider%20de%20Noticias%22,%22o%22:%5B%7B%22d%22:1,%22p%22:%22UBPDFechaPublicacion%22%7D%5D%7D">Reseña de la UBPD</a>
-            </li>
-            <li class="UBPDNav-menu-item-submenu-item" role="menuitem">
-              <a href="https://www.flickr.com/photos/142236467@N07/" target="_blank">Misión y Visión</a>
-            </li>
-            <li class="UBPDNav-menu-item-submenu-item" role="menuitem">
-              <a href="https://soundcloud.com/redes-planeacion-nacional" target="_blank">Perfil de Nuestra Directora</a>
-            </li>
-            <li class="UBPDNav-menu-item-submenu-item" role="menuitem">
-              <a href="#" target="_blank">Equipo Directivo</a>
-            </li>
-            <li class="UBPDNav-menu-item-submenu-item" role="menuitem">
-              <a href="https://www.youtube.com/channel/UCx25Fx8FD1URCYzlGVyLZ0w" target="_blank">Organigrama</a>
-            </li>
-          </div>
+          <li class="UBPDNav-menu-item" role="menuitem">
+            <a href="https://www.UBPD.gov.co/sala-de-prensa/Paginas/Comunicados.aspx#Default=%7B%22k%22:%22SPContentType:Slider%20de%20Noticias%22,%22o%22:%5B%7B%22d%22:1,%22p%22:%22UBPDFechaPublicacion%22%7D%5D%7D">Reseña de la UBPD</a>
+          </li>
+          <li class="UBPDNav-menu-item" role="menuitem">
+            <a href="https://www.flickr.com/photos/142236467@N07/" target="_blank">Misión y Visión</a>
+          </li>
+          <li class="UBPDNav-menu-item" role="menuitem">
+            <a href="https://soundcloud.com/redes-planeacion-nacional" target="_blank">Perfil de Nuestra Directora</a>
+          </li>
+          <li class="UBPDNav-menu-item" role="menuitem">
+            <a href="#" target="_blank">Equipo Directivo</a>
+          </li>
+          <li class="UBPDNav-menu-item" role="menuitem">
+            <a href="https://www.youtube.com/channel/UCx25Fx8FD1URCYzlGVyLZ0w" target="_blank">Organigrama</a>
+          </li>
         </ul>
       </li>
       <li class="UBPDNav-menu-item" id="UBPDentidad" role="menuitem" aria-haspopup="true">
@@ -222,6 +220,7 @@
     </div>
   </nav>
   <!-- FIN Navegacion -->
+  <main>
   <!-- Slider -->
   <section class="UBPDSlider">
       <h2 class="hidden">Información destacada</h2>
@@ -232,7 +231,7 @@
             <picture>
               <!-- Imagen móvil -->
               <source 
-                srcset="./img/slide2-mobile.png"
+                srcset="./img/imagen_prueba.jpg"
                 media="(max-width: 600px)"
               />
               <!-- Imagen de escritorio -->
@@ -336,11 +335,11 @@
          </button>
          <div class="UBPDSlider-buttons-dots">
            <!-- Botones del slider: se debe renderizar uno por cada elemento existente y cambiar el número que se envía como parámetro en la función -->
-           <button class="UBPDSlider-buttons-dots-element active" aria-label="Ir a slider número 1" onclick="UBPDgotoSlide('UBPDsliderHome', 'UBPDSlider-element', 1);"></button>
-           <button class="UBPDSlider-buttons-dots-element" aria-label="Ir a slider número 2" onclick="UBPDgotoSlide('UBPDsliderHome', 'UBPDSlider-element', 2);"></button>
-           <button class="UBPDSlider-buttons-dots-element" aria-label="Ir a slider número 3" onclick="UBPDgotoSlide('UBPDsliderHome', 'UBPDSlider-element', 3);"></button>
-           <button class="UBPDSlider-buttons-dots-element" aria-label="Ir a slider número 3" onclick="UBPDgotoSlide('UBPDsliderHome', 'UBPDSlider-element', 4);"></button>
-           <button class="UBPDSlider-buttons-dots-element" aria-label="Ir a slider número 3" onclick="UBPDgotoSlide('UBPDsliderHome', 'UBPDSlider-element', 5);"></button>
+           <button class="UBPDSlider-buttons-dots-element active" aria-label="Ir a slider número 1" onclick="UBPDgotoSlide('UBPDsliderHome', 'UBPDSlider-principal-element', 1);"></button>
+           <button class="UBPDSlider-buttons-dots-element" aria-label="Ir a slider número 2" onclick="UBPDgotoSlide('UBPDsliderHome', 'UBPDSlider-principal-element', 2);"></button>
+           <button class="UBPDSlider-buttons-dots-element" aria-label="Ir a slider número 3" onclick="UBPDgotoSlide('UBPDsliderHome', 'UBPDSlider-principal-element', 3);"></button>
+           <button class="UBPDSlider-buttons-dots-element" aria-label="Ir a slider número 3" onclick="UBPDgotoSlide('UBPDsliderHome', 'UBPDSlider-principal-element', 4);"></button>
+           <button class="UBPDSlider-buttons-dots-element" aria-label="Ir a slider número 3" onclick="UBPDgotoSlide('UBPDsliderHome', 'UBPDSlider-principal-element', 5);"></button>
          </div>    
          <!-- Botón siguiente del slider -->
          <button class="UBPDSlider-buttons-controls-button" aria-label="Ir a slider siguiente" onclick="UBPDnextSlide('UBPDsliderHome', 'UBPDSlider-principal-element');">
@@ -352,100 +351,45 @@
   </section>
   <!-- FIN Slider -->
   <!-- Bloque noticias -->
-  <h2 class="UBPDSubtitle UBPDSubtitle-principal">Lo último de la UBPD</h2>
-  <section class="UBPDBlock">
-    <div class="UBPDNews">
-      <div class="UBPDNews-more">
-        <a href="https://www.UBPD.gov.co/sala-de-prensa/Paginas/Comunicados.aspx#Default={%22k%22:%22SPContentType:Noticias%22,%22o%22:[{%22d%22:1,%22p%22:%22UBPDFechaPublicacion%22}]}" class="UBPDNews-more-button">Más noticias</a>
-      </div>
-      <!-- Noticia -->
-      <article class="UBPDNews-item">
-        <a href="./noticia.html">
-          <img src="./img/imagen-cuadrada.png" alt="Noticia" class="UBPDNews-item-image">
-          <div class="UBPDNews-item-content">
-            <p class="UBPDNews-item-content-date">Noticias / Marzo 2021</p>
-            <h3 class="UBPDNews-item-content-title">Consulte el boletín trimestral OCDE Colombia</h3>
-            <p class="UBPDNews-item-content-text">En esta edición, podrán encontrar una síntesis de los asuntos más relevantes discutidos en la OCDE durante el último trimestre. También encontrarán una...</p>
-          </div>
-        </a>
-      </article>
-      <!-- Noticia -->
-      <article class="UBPDNews-item">
-        <a href="./noticia.html">
-          <img src="./img/nota-1-cuadrada.jpg" alt="El Sisbén se moderniza y lanza versión IV" class="UBPDNews-item-image">
-          <div class="UBPDNews-item-content">
-            <p class="UBPDNews-item-content-date">Noticias / Marzo 2021</p>
-            <h3 class="UBPDNews-item-content-title">El Sisbén se moderniza y lanza versión IV</h3>
-            <p class="UBPDNews-item-content-text">​​​A partir del 5 de marzo se moderniza el sistema de información del Sisbén. Después de tres años de trabajo conjunto con las entidades territoriales para actualizar la información... </p>
-          </div>
-        </a>
-      </article>
-      <!-- Noticia -->
-      <article class="UBPDNews-item">
-        <a href="./noticia.html">
-          <img src="./img/nota-2-cuadrada.jpg" alt="Consulte el boletín trimestral OCDE Colombia" class="UBPDNews-item-image">
-          <div class="UBPDNews-item-content">
-            <p class="UBPDNews-item-content-date">Noticias / Marzo 2021</p>
-            <h3 class="UBPDNews-item-content-title">Consulte el boletín trimestral OCDE Colombia</h3>
-            <p class="UBPDNews-item-content-text">En esta edición, podrán encontrar una síntesis de los asuntos más relevantes discutidos en la OCDE durante el último trimestre. También encontrarán una...</p>
-          </div>
-        </a>
-      </article>
-      <!-- Noticia -->
-      <article class="UBPDNews-item">
-        <a href="./noticia.html">
-          <img src="./img/nota-2-cuadrada.jpg" alt="El Sisbén se moderniza y lanza versión IV" class="UBPDNews-item-image">
-          <div class="UBPDNews-item-content">
-            <p class="UBPDNews-item-content-date">Noticias / Marzo 2021</p>
-            <h3 class="UBPDNews-item-content-title">El Sisbén se moderniza y lanza versión IV</h3>
-            <p class="UBPDNews-item-content-text">​​​A partir del 5 de marzo se moderniza el sistema de información del Sisbén. Después de tres años de trabajo conjunto con las entidades territoriales para actualizar la información... </p>
-          </div>
-        </a>
-      </article>
-       <!-- Noticia -->
-       <article class="UBPDNews-item">
-        <a href="./noticia.html">
-          <img src="./img/imagen-cuadrada.png" alt="Noticia" class="UBPDNews-item-image">
-          <div class="UBPDNews-item-content">
-            <p class="UBPDNews-item-content-date">Noticias / Marzo 2021</p>
-            <h3 class="UBPDNews-item-content-title">Consulte el boletín trimestral OCDE Colombia</h3>
-            <p class="UBPDNews-item-content-text">En esta edición, podrán encontrar una síntesis de los asuntos más relevantes discutidos en la OCDE durante el último trimestre. También encontrarán una...</p>
-          </div>
-        </a>
-      </article>
-       <!-- Noticia -->
-       <article class="UBPDNews-item">
-        <a href="./noticia.html">
-          <img src="./img/imagen-cuadrada.png" alt="Noticia" class="UBPDNews-item-image">
-          <div class="UBPDNews-item-content">
-            <p class="UBPDNews-item-content-date">Noticias / Marzo 2021</p>
-            <h3 class="UBPDNews-item-content-title">Consulte el boletín trimestral OCDE Colombia</h3>
-            <p class="UBPDNews-item-content-text">En esta edición, podrán encontrar una síntesis de los asuntos más relevantes discutidos en la OCDE durante el último trimestre. También encontrarán una...</p>
-          </div>
-        </a>
-      </article>
-    </div>
-    
-  </section>
-  <!-- FIN Bloque noticias -->
-   <!-- Inicio Banner -->
-   <section class="UBPDBanner">
-    <a href="#">
-      <img class="UBPDBanner-img" src="./img/INTRANET.jpg" alt="Banner_home">
-    </a>
-   </section>
-  <!-- FIN Banner -->
-  <!-- Bloque noticias -->
-  <section class="UBPDBlock">
-  <h2 class="UBPDSubtitle">Lo último en nuestra web</h2>
-  <div class="UBPDNews">
-    <div class="UBPDNews-more">
-      <a href="https://www.UBPD.gov.co/sala-de-prensa/Paginas/Comunicados.aspx#Default={%22k%22:%22SPContentType:Noticias%22,%22o%22:[{%22d%22:1,%22p%22:%22UBPDFechaPublicacion%22}]}" class="UBPDNews-more-button">Ir a la web</a>
-    </div>
+  <div class="UBPDTitle UBPDTitle-aguamarina">
+    <h2 class="UBPDTitle-text">Lo último de la UBPD</h2>
+    <a href="https://www.UBPD.gov.co/sala-de-prensa/Paginas/Comunicados.aspx#Default={%22k%22:%22SPContentType:Noticias%22,%22o%22:[{%22d%22:1,%22p%22:%22UBPDFechaPublicacion%22}]}" class="UBPDTitle-button">Más noticias</a>
+  </div>
+  <section class="UBPDNews">
     <!-- Noticia -->
-    <article class="UBPDNews-item">
+    <article class="UBPDNews-item" style="--newscolor: #6aa4a9;">
       <a href="./noticia.html">
-        <img src="./img/imagen-cuadrada.png" alt="Noticia" class="UBPDNews-item-image">
+        <div class="UBPDNews-item-image">
+          <img src="./img/imagen-cuadrada.png" alt="Noticia" >
+        </div>
+        <div class="UBPDNews-item-content">
+          <p class="UBPDNews-item-content-date">Marzo 2021</p>
+          <h3 class="UBPDNews-item-content-title">Título de la noticia interna de la UBPD</h3>
+          <p class="UBPDNews-item-content-text">En esta edición, podrán encontrar una síntesis de los asuntos más relevantes discutidos en la OCDE durante el último trimestre. También encontrarán una...</p>
+          <p class="UBPDNews-item-content-more">Leer más</p>
+        </div>
+      </a>
+    </article>
+    <!-- Noticia -->
+    <article class="UBPDNews-item" style="--newscolor: #f29980;">
+      <a href="./noticia.html">
+        <div class="UBPDNews-item-image">
+          <img src="./img/nota-1-cuadrada.jpg" alt="El Sisbén se moderniza y lanza versión IV">
+        </div>
+        <div class="UBPDNews-item-content">
+          <p class="UBPDNews-item-content-date">Noticias / Marzo 2021</p>
+          <h3 class="UBPDNews-item-content-title">El Sisbén se moderniza y lanza versión IV</h3>
+          <p class="UBPDNews-item-content-text">​​​A partir del 5 de marzo se moderniza el sistema de información del Sisbén. Después de tres años de trabajo conjunto con las entidades territoriales para actualizar la información... </p>
+          <p class="UBPDNews-item-content-more">Leer más</p>
+        </div>
+      </a>
+    </article>
+    <!-- Noticia -->
+    <article class="UBPDNews-item" style="--newscolor: #24757d;">
+      <a href="./noticia.html">
+        <div class="UBPDNews-item-image">
+          <img src="./img/nota-2-cuadrada.jpg" alt="Consulte el boletín trimestral OCDE Colombia">
+        </div>
         <div class="UBPDNews-item-content">
           <p class="UBPDNews-item-content-date">Noticias / Marzo 2021</p>
           <h3 class="UBPDNews-item-content-title">Consulte el boletín trimestral OCDE Colombia</h3>
@@ -453,19 +397,102 @@
         </div>
       </a>
     </article>
+     <!-- Noticia -->
+     <article class="UBPDNews-item" style="--newscolor: #737345;">
+      <a href="./noticia.html">
+        <div class="UBPDNews-item-image">
+          <img src="./img/imagen-cuadrada.png" alt="Noticia" >
+        </div>
+        <div class="UBPDNews-item-content">
+          <p class="UBPDNews-item-content-date">Marzo 2021</p>
+          <h3 class="UBPDNews-item-content-title">Título de la noticia interna de la UBPD</h3>
+          <p class="UBPDNews-item-content-text">En esta edición, podrán encontrar una síntesis de los asuntos más relevantes discutidos en la OCDE durante el último trimestre. También encontrarán una...</p>
+          <p class="UBPDNews-item-content-more">Leer más</p>
+        </div>
+      </a>
+    </article>
     <!-- Noticia -->
-    <article class="UBPDNews-item">
+    <article class="UBPDNews-item" style="--newscolor: #e88226;">
+      <a href="./noticia.html">
+        <div class="UBPDNews-item-image">
+          <img src="./img/nota-1-cuadrada.jpg" alt="El Sisbén se moderniza y lanza versión IV">
+        </div>
+        <div class="UBPDNews-item-content">
+          <p class="UBPDNews-item-content-date">Noticias / Marzo 2021</p>
+          <h3 class="UBPDNews-item-content-title">El Sisbén se moderniza y lanza versión IV</h3>
+          <p class="UBPDNews-item-content-text">​​​A partir del 5 de marzo se moderniza el sistema de información del Sisbén. Después de tres años de trabajo conjunto con las entidades territoriales para actualizar la información... </p>
+          <p class="UBPDNews-item-content-more">Leer más</p>
+        </div>
+      </a>
+    </article>
+    <!-- Noticia -->
+    <article class="UBPDNews-item" style="--newscolor: #bfcc6b;">
+      <a href="./noticia.html">
+        <div class="UBPDNews-item-image">
+          <img src="./img/nota-2-cuadrada.jpg" alt="Consulte el boletín trimestral OCDE Colombia">
+        </div>
+        <div class="UBPDNews-item-content">
+          <p class="UBPDNews-item-content-date">Noticias / Marzo 2021</p>
+          <h3 class="UBPDNews-item-content-title">Consulte el boletín trimestral OCDE Colombia</h3>
+          <p class="UBPDNews-item-content-text">En esta edición, podrán encontrar una síntesis de los asuntos más relevantes discutidos en la OCDE durante el último trimestre. También encontrarán una...</p>
+        </div>
+      </a>
+    </article>
+  </section>
+  <!-- FIN Bloque noticias -->
+   <!-- Inicio Banner -->
+   <section class="UBPDBanner">
+    <a href="#">
+      <picture>
+        <!-- Imagen móvil -->
+        <source 
+          srcset="./img/slide2-mobile.png"
+          media="(max-width: 600px)"
+        />
+        <!-- Imagen de escritorio -->
+        <source 
+          srcset="./img/INTRANET.jpg"
+          media="(min-width: 600px)"
+        />
+        <img class="UBPDBanner-img"
+            src="./img/INTRANET.jpg" alt="Paisaje Golfo de Morrosquillo"
+          >
+      </picture>
+    </a>
+   </section>
+  <!-- FIN Banner -->
+  <!-- Bloque noticias -->
+  <div class="UBPDTitle UBPDTitle-violeta">
+    <h2 class="UBPDTitle-text">Lo último en nuestra web</h2>
+    <a href="https://ubpdbusquedadesaparecidos.co" class="UBPDTitle-button">Más noticias</a>
+  </div>
+  <section class="UBPDNews">
+    <!-- Noticia -->
+    <article class="UBPDNews-item" style="--newscolor: #9579BC;">
+      <a href="./noticia.html">
+        <img src="./img/imagen-cuadrada.png" alt="Noticia" class="UBPDNews-item-image">
+        <div class="UBPDNews-item-content">
+          <p class="UBPDNews-item-content-date">Marzo 2021</p>
+          <h3 class="UBPDNews-item-content-title">Título de la noticia interna de la UBPD</h3>
+          <p class="UBPDNews-item-content-text">En esta edición, podrán encontrar una síntesis de los asuntos más relevantes discutidos en la OCDE durante el último trimestre. También encontrarán una...</p>
+          <p class="UBPDNews-item-content-more">Leer más</p>
+        </div>
+      </a>
+    </article>
+    <!-- Noticia -->
+    <article class="UBPDNews-item" style="--newscolor: #9579BC;">
       <a href="./noticia.html">
         <img src="./img/nota-1-cuadrada.jpg" alt="El Sisbén se moderniza y lanza versión IV" class="UBPDNews-item-image">
         <div class="UBPDNews-item-content">
           <p class="UBPDNews-item-content-date">Noticias / Marzo 2021</p>
           <h3 class="UBPDNews-item-content-title">El Sisbén se moderniza y lanza versión IV</h3>
           <p class="UBPDNews-item-content-text">​​​A partir del 5 de marzo se moderniza el sistema de información del Sisbén. Después de tres años de trabajo conjunto con las entidades territoriales para actualizar la información... </p>
+          <p class="UBPDNews-item-content-more">Leer más</p>
         </div>
       </a>
     </article>
     <!-- Noticia -->
-    <article class="UBPDNews-item">
+    <article class="UBPDNews-item" style="--newscolor: #9579BC;">
       <a href="./noticia.html">
         <img src="./img/nota-2-cuadrada.jpg" alt="Consulte el boletín trimestral OCDE Colombia" class="UBPDNews-item-image">
         <div class="UBPDNews-item-content">
@@ -475,197 +502,135 @@
         </div>
       </a>
     </article>
-    <!-- Noticia -->
-    <article class="UBPDNews-item">
-      <a href="./noticia.html">
-        <img src="./img/nota-2-cuadrada.jpg" alt="El Sisbén se moderniza y lanza versión IV" class="UBPDNews-item-image">
-        <div class="UBPDNews-item-content">
-          <p class="UBPDNews-item-content-date">Noticias / Marzo 2021</p>
-          <h3 class="UBPDNews-item-content-title">El Sisbén se moderniza y lanza versión IV</h3>
-          <p class="UBPDNews-item-content-text">​​​A partir del 5 de marzo se moderniza el sistema de información del Sisbén. Después de tres años de trabajo conjunto con las entidades territoriales para actualizar la información... </p>
-        </div>
-      </a>
-    </article>
-  </div>
-  
   </section>
   <!-- FIN Bloque noticias -->
-
-    <!-- Inicio Actividades -->
-  <section class="UBPDActividades">
-    <div class="UBPDActividades-container">
-      <div class="UBPDActividades-container-cont">
-        <a href="#">
-          <img class="UBPDActividades-container-cont-img" src="./img/INTRANET.jpg" alt="imagen"/>
-        </a>
+  <!-- Inicio Actividades -->
+  <section class="UBPDActivities">
+    <div class="UBPDActivities-container">
+      <!-- Banner inferior -->
+      <a href="#">
+        <img class="UBPDActivities-container-img" src="./img/INTRANET.jpg" alt="imagen"/>
+      </a>
+      <!-- FIN Banner inferior -->
+      <div class="UBPDTitle UBPDTitle-small UBPDTitle-aguamarina">
+        <h3 class="UBPDTitle-text UBPDTitle-small-text"><b>#</b>LaBúsquedaEsContigo</h3>
       </div>
-      <div class="UBPDSlider UBPDSlider-actividades">
-        <h2 class="UBPDSlider-titulo">La UBPD destaca</h2>
-        <div class="UBPDSlider-container" id="UBPDsliderSub" data-position="1">
+      <!-- Slider -->
+      <div class="UBPDSliderMini">
+        <div class="UBPDSliderMini-container" id="UBPDSliderActivities" data-position="1">
           <!-- Slide -->
-          <div>
-          <div class="UBPDSlider-element UBPDSlider-element-actividades">
-              <picture>
-                <!-- Imagen móvil -->
-                <source 
-                  srcset="./img/slide2-mobile.png"
-                  media="(max-width: 600px)"
-                />
-                <!-- Imagen de escritorio -->
-                <source 
-                  srcset="https://intranet.ubpdbusquedadesaparecidos.co/wp-content/uploads/2021/12/Tips-uso-de-ban%cc%83os-INTRANET.jpg"
-                  media="(min-width: 600px)"
-                />
-                <img class="UBPDSlider-element-image"
-                   src="https://intranet.ubpdbusquedadesaparecidos.co/wp-content/uploads/2021/12/Tips-uso-de-ban%cc%83os-INTRANET.jpg" alt="Paisaje Golfo de Morrosquillo"
-                  >
-              </picture>
-              <div class="UBPDSlider-element-info UBPDSlider-element-info-actividades">
-                <p class="UBPDSlider-element-info-text UBPDSlider-element-info-text-actividades">Inversión histórica en vías terciarias en el Golfo de Morrosquillo</p>
-                <p class="UBPDSlider-element-info-text UBPDSlider-element-info-text-actividades">En una medida dirigida a afianzar la reactivación económica, bla bla bla gobierno bla bla gobierno</p>
-              </div>
-            </div>
+          <div class="UBPDSliderMini-element">
+            <img class="UBPDSliderMini-element-image"
+                src="./img/imagen-cuadrada.png" alt="Paisaje Golfo de Morrosquillo"
+              >
+            <p class="UBPDSliderMini-element-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde vitae illo itaque, voluptatum eveniet nihil ex voluptatibus quas a iste, illum in? Iusto temporibus obcaecati ea minus, voluptatum facilis quo.</p>
           </div>
           <!-- Slide -->
-          <a href="https://www.UBPD.gov.co/Paginas/Inversiones-por-$130-000-millones-para-potenciar-desarrollo-turistico-y-social-de-Mompox.aspx">
-            <div class="UBPDSlider-element UBPDSlider-element-actividades">
-              <picture>
-                <!-- Imagen móvil -->
-                <source 
-                  srcset="./img/slide2-mobile.png"
-                  media="(max-width: 600px)"
-                />
-                <!-- Imagen de escritorio -->
-                <source 
-                  srcset="./img/INTRANET.jpg"
-                  media="(min-width: 600px)"
-                />
-                <img class="UBPDSlider-element-image"
-                   src="./img/INTRANET.jpg" alt="Paisaje Golfo de Morrosquillo"
-                  >
-              </picture>
-              <div class="UBPDSlider-element-info">
-                <p class="UBPDSlider-element-info-title">Inversión histórica en vías terciarias en el Golfo de Morrosquillo</p>
-                <p class="UBPDSlider-element-info-text">En una medida dirigida a afianzar la reactivación económica, el Gobierno nacional asignó $47.193 millones para la rehabilitación de vías terciarias en los departamentos de Sucre y Córdoba.</p>
-              </div>
-            </div>
-          </a>
-          <!-- Slide -->
-          <div class="UBPDSlider-element UBPDSlider-element-actividades">
-            <picture>
-              <!-- Imagen móvil -->
-              <source 
-                srcset="./img/slide2-mobile.png"
-                media="(max-width: 600px)"
-              />
-              <!-- Imagen de escritorio -->
-              <source 
-                srcset="./img/slide2-desktop.png"
-                media="(min-width: 600px)"
-              />
-              <img class="UBPDSlider-element-image"
-                  src="./img/INTRANET.jpg" alt="Paisaje Golfo de Morrosquillo"
+          <a href="#">
+            <div class="UBPDSliderMini-element">
+              <img class="UBPDSliderMini-element-image"
+                  src="./img/imagen-cuadrada.png" alt="Paisaje Golfo de Morrosquillo"
                 >
-            </picture>
-            <div class="UBPDSlider-element-info">
-              <p class="UBPDSlider-element-info-title">Inversión histórica en vías terciarias en el Golfo de Morrosquillo</p>
-              <p class="UBPDSlider-element-info-text">En una medida dirigida a afianzar la reactivación económica, el Gobierno nacional asignó $47.193 millones para la rehabilitación de vías terciarias en los departamentos de Sucre y Córdoba.</p>
+              <p class="UBPDSliderMini-element-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde vitae </p>
             </div>
-          </div>
-          <!-- Slide -->
-          <a href="https://www.UBPD.gov.co/Paginas/Inversiones-por-$130-000-millones-para-potenciar-desarrollo-turistico-y-social-de-Mompox.aspx">
-            <div class="UBPDSlider-element UBPDSlider-element-actividades">
-            <picture>
-              <source 
-                srcset="./img/slide1-mobile.png"
-                media="(max-width: 600px)"
-              />
-              <source 
-                srcset="./img/slide1-desktop.png"
-                media="(min-width: 600px)"
-              />
-              <img class="UBPDSlider-element-image"
-               src="./img/INTRANET.jpg" alt="Paisaje Golfo de Morrosquillo" >
-            </picture>
-          </div>
           </a>
           <!-- Slide -->
-          <div class="UBPDSlider-element UBPDSlider-element-actividades">
-            <picture>
-              <source 
-                srcset="./img/slide1-mobile.png"
-                media="(max-width: 600px)"
-              />
-              <source 
-                srcset="./img/slide1-desktop.png"
-                media="(min-width: 600px)"
-              />
-              <img class="UBPDSlider-element-image" src="img/slide1-desktop.png" alt="Paisaje Golfo de Morrosquillo" >
-            </picture>
+          <div class="UBPDSliderMini-element">
+            <img class="UBPDSliderMini-element-image"
+                src="./img/imagen-cuadrada.png" alt="Paisaje Golfo de Morrosquillo"
+              >
+            <p class="UBPDSliderMini-element-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde vitae illo itaque, voluptatum eveniet nihil ex voluptatibus quas</p>
+          </div>
+        </div>
+        <div class="UBPDSliderMini-buttons">
+          <div class="UBPDSliderMini-buttons-controls">
+            <!-- Botón atrás del slider -->
+          <button class="UBPDSliderMini-buttons-controls-button" aria-label="Ir a slider anterior" onclick="UBPDprevSlide('UBPDSliderActivities', 'UBPDSliderMini-element');">
+            <img src="./assets/boton_flecha_izq.svg" alt="Flecha a la izquierda">
+          </button>
+          <div class="UBPDSliderMini-buttons-dots">
+            <!-- Botones del slider: se debe renderizar uno por cada elemento existente y cambiar el número que se envía como parámetro en la función -->
+            <button class="UBPDSliderMini-buttons-dots-element active" aria-label="Ir a slider número 1" onclick="UBPDgotoSlide('UBPDSliderActivities', 'UBPDSliderMini-element', 1);"></button>
+            <button class="UBPDSliderMini-buttons-dots-element" aria-label="Ir a slider número 2" onclick="UBPDgotoSlide('UBPDSliderActivities', 'UBPDSliderMini-element', 2);"></button>
+            <button class="UBPDSliderMini-buttons-dots-element" aria-label="Ir a slider número 3" onclick="UBPDgotoSlide('UBPDSliderActivities', 'UBPDSliderMini-element', 3);"></button>
+          </div>    
+          <!-- Botón siguiente del slider -->
+          <button class="UBPDSliderMini-buttons-controls-button" aria-label="Ir a slider siguiente" onclick="UBPDnextSlide('UBPDSliderActivities', 'UBPDSliderMini-element');">
+            <img src="./assets/boton_flecha_der.svg" alt="Flecha a la derecha">
+          </button>
           </div>
         </div>
 
-        <div class="UBPDSlider-buttons">
-          <div class="UBPDSlider-buttons-controls">
-            <!-- Botón atrás del slider -->
-           <button class="UBPDSlider-buttons-controls-button UBPDSlider-buttons-controls-button-izquierda" aria-label="Ir a slider anterior" onclick="UBPDprevSub('UBPDsliderSub', 'UBPDSlider-element');">
-             <img src="./assets/left-white-arrow.svg" alt="Flecha a la izquierda">
-           </button>
-            <!-- Botón siguiente del slider -->
-           <button class="UBPDSlider-buttons-controls-button UBPDSlider-buttons-controls-button-derecha" aria-label="Ir a slider siguiente" onclick="UBPDnextSub('UBPDsliderSub', 'UBPDSlider-element');">
-             <img src="./assets/right-white-arrow.svg" alt="Flecha a la derecha">
-           </button>
-          </div>
-         <div class="UBPDSlider-buttons-dots">
-           <!-- Botones del slider: se debe renderizar uno por cada elemento existente y cambiar el número que se envía como parámetro en la función -->
-           <button class="UBPDSlider-buttons-dots-element active" aria-label="Ir a slider número 1" onclick="UBPDgotoSub('UBPDsliderHome', 'UBPDSlider-element', 1);"></button>
-           <button class="UBPDSlider-buttons-dots-element" aria-label="Ir a slider número 2" onclick="UBPDgotoSub('UBPDsliderHome', 'UBPDSlider-element', 2);"></button>
-           <button class="UBPDSlider-buttons-dots-element" aria-label="Ir a slider número 3" onclick="UBPDgotoSub('UBPDsliderHome', 'UBPDSlider-element', 3);"></button>
-           <button class="UBPDSlider-buttons-dots-element" aria-label="Ir a slider número 3" onclick="UBPDgotoSub('UBPDsliderHome', 'UBPDSlider-element', 4);"></button>
-           <button class="UBPDSlider-buttons-dots-element" aria-label="Ir a slider número 3" onclick="UBPDgotoSub('UBPDsliderHome', 'UBPDSlider-element', 5);"></button>
-         </div>    
-        </div>
       </div>
     </div>
-    <div class="UBPDActividades-container">
-      <div class="UBPDActividades-container-header">
-        <h4 class="UBPDActividades-container-header-titulo">Próximas actividades</h4>
-        <a class="UBPDActividades-container-header-button" href="">Ver más</a>
-      </div>
-        <div class="UBPDNews-item UBPDNews-item-actividades">
-            <div class="UBPDNews-item-content">
-              <p class="UBPDNews-item-content-date UBPDNews-item-content-date-actividad">Noticias / Marzo 2021</p>
-              <h3 class="UBPDNews-item-content-title UBPDNews-item-content-title-actividad">El Sisbén se moderniza y lanza versión IV</h3>
-              <p class="UBPDNews-item-content-text UBPDNews-item-content-text-actividad">​​​A partir del 5 de marzo se moderniza el sistema de información del Sisbén.</p>
-              <div class="UBPDNews-item-content-cont">
-                <a class="UBPDNews-item-content-cont-buton" href="">click aqui</a>
-                <a class="UBPDNews-item-content-cont-buton" href="">ir</a>
+    <div class="UBPDActivities-container">
+      <h3 class="UBPDActivities-title">Próximas actividades</h3>
+      <!-- Lista de Actividades -->
+        <div class="UBPDActivities-item">
+          <div class="UBPDActivities-item-date">
+            <p class="UBPDActivities-item-date-number">25 Dic</p>
+            <p class="UBPDActivities-item-date-hour">07:00 am</p>
+          </div>
+            <div class="UBPDActivities-item-content">
+              <h4 class="UBPDActivities-item-content-title">Título de la actividad interna de la UBPD</h4>
+              <p class="UBPDActivities-item-content-text">​​​Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat illo excepturi distinctio nesciunt! Voluptate suscipit</p>
+              <div class="UBPDActivities-item-buttons">
+                <a class="UBPDActivities-item-buttons-item" href="#">Más información</a>
+                <a class="UBPDActivities-item-buttons-item UBPDActivities-item-buttons-item-color" href="#">Entrar</a>
               </div>
             </div>
         </div>
-        <div class="UBPDNews-item UBPDNews-item-actividades">
-          <div class="UBPDNews-item-content">
-            <p class="UBPDNews-item-content-date UBPDNews-item-content-date-actividad">Noticias / Marzo 2021</p>
-            <h3 class="UBPDNews-item-content-title UBPDNews-item-content-title-actividad">El Sisbén se moderniza y lanza versión IV</h3>
-            <p class="UBPDNews-item-content-text UBPDNews-item-content-text-actividad">​​​A partir del 5 de marzo se moderniza el sistema de información del Sisbén.</p>
-            <div class="UBPDNews-item-content-cont">
-              <a class="UBPDNews-item-content-cont-buton" href="">click aqui</a>
+        <div class="UBPDActivities-item">
+          <div class="UBPDActivities-item-date">
+            <p class="UBPDActivities-item-date-number">25 Dic</p>
+            <p class="UBPDActivities-item-date-hour">07:00 am</p>
+          </div>
+            <div class="UBPDActivities-item-content">
+              <h4 class="UBPDActivities-item-content-title">Título de la actividad interna de la UBPD</h4>
+              <p class="UBPDActivities-item-content-text">​​​Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat illo excepturi distinctio nesciunt! Voluptate suscipit</p>
+              <div class="UBPDActivities-item-buttons">
+              </div>
             </div>
-          </div>
-      </div>
-      <div class="UBPDNews-item UBPDNews-item-actividades">
-        <div class="UBPDNews-item-content">
-          <p class="UBPDNews-item-content-date UBPDNews-item-content-date-actividad">Noticias / Marzo 2021</p>
-          <h3 class="UBPDNews-item-content-title UBPDNews-item-content-title-actividad">El Sisbén se moderniza y lanza versión IV</h3>
-          <p class="UBPDNews-item-content-text UBPDNews-item-content-text-actividad">​​​A partir del 5 de marzo se moderniza el sistema de información del Sisbén.</p>
-          <div class="UBPDNews-item-content-cont">
-            
-          </div>
         </div>
+        <div class="UBPDActivities-item">
+          <div class="UBPDActivities-item-date">
+            <p class="UBPDActivities-item-date-number">25 Dic</p>
+            <p class="UBPDActivities-item-date-hour">07:00 am</p>
+          </div>
+            <div class="UBPDActivities-item-content">
+              <h4 class="UBPDActivities-item-content-title">Título de la actividad interna de la UBPD</h4>
+              <p class="UBPDActivities-item-content-text">​​​Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat illo excepturi distinctio nesciunt! Voluptate suscipit</p>
+              <div class="UBPDActivities-item-buttons">
+                <a class="UBPDActivities-item-buttons-item" href="#">Más información</a>
+              </div>
+            </div>
+        </div>
+      <!-- FIn Lista de Actividades -->
+      <a class="UBPDActivities-button" href="">Ver todas</a>
     </div>
-      </div>
   </section>
-    <!-- Fin Actividades -->
+  <!-- Fin Actividades -->
+  </main>
+  <!-- Footer -->
+  <footer class="UBPDFooter">
+    <ul class="UBPDFooter-links">
+      <li>
+        <a href="">Elemento de la lista</a>
+      </li>
+      <li>
+        <a href="">Elemento de la lista</a>
+      </li>
+      <li>
+        <a href="">Elemento de la lista</a>
+      </li>
+      <li>
+        <a href="">Elemento de la lista</a>
+      </li>
+    </ul>
+    <!-- Logo de la UBPD -->
+    <img class="UBPDFooter-logo" src="./assets/logo_ubpd_blanco_hor.svg" alt="Logo UBPD" />
+  </footer>
+  <!-- FIN Footer -->
 
   <script type="text/javascript" src="./js/UBPD_scripts.js"></script>
 

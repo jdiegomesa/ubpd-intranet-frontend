@@ -19,6 +19,10 @@ a{
 main{
   width: fit-content;
   margin: 0 auto;
+  min-height: 65vh;
+  @media(--mobile){
+    padding-top: 12.5vh;
+  }
 }
 main input[type=button], main input[type=reset], main input[type=submit], main button{
   min-width: inherit;
@@ -106,15 +110,26 @@ main input[type=button], main input[type=reset], main input[type=submit], main b
 }
 
 .UBPDBanner{
-  width: 1280px;
-  margin: 0 auto;
+  max-width: 1280px;
+  width: max-content;
+  margin: var(--fuente1) auto;
   @media(--tablet){
-    width: 91.5vw;
+    margin: var(--fuente1_tablet) auto;
   }
   @media(--mobile){
-    width: 90vw;
+    margin: var(--fuente0_mobile) auto;
   }
   &-img{
-    width: 100%;
+    width: 1280px;
+    height: 190px;
+    object-fit: cover;
+    @media(--tablet){
+      width: 90vw;
+      height: 13.3vw;
+    }
+    @media(--mobile){
+      width: 90vw;
+      height: 28.12vw;
+    }
   }
 }

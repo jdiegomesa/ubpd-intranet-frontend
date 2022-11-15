@@ -1,13 +1,19 @@
 @import './css/index.css';
 
+@import './css/title.css';
 @import './css/bot.css';
 @import './css/header.css';
+@import './css/footer.css';
 @import './css/nav.css';
 @import './css/slider.css';
 @import './css/news.css';
 @import './css/actividad.css';
+@import './css/document.css';
 @import './css/portada.css';
 @import './css/destacados.css';
+@import './css/post.css';
+@import './css/pager.css';
+@import './css/dir_saberes.css';
 
 :root{
   --gris: #d1c7c7;
@@ -16,9 +22,9 @@
   --rojo: #A80521;
   --boton: #8F80AF;
   --verde: #bfcc6b;
-
   --violeta: #9579BC;
   --aguamarina: #6AA4A9;
+  --aguamarina_transparente: #6aa4a9b3;
   --azul_oscuro: #173642;
   --color_texto: #333;
   --color_texto_claro: #6a6a6a;

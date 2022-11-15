@@ -9,6 +9,9 @@
     bottom: 190px;
     z-index: 30;
     transition: .5s;
+    @media(--mobile){
+      bottom: 140px;
+    }
     &:hover{
       cursor:pointer;
       transform: scale(1.05);
@@ -60,6 +63,9 @@
     bottom: 100px;
     z-index: 40;
     transition: .5s;
+    @media(--mobile){
+      bottom: 50px;
+    }
     &:hover{
       cursor:pointer;
       transform: scale(1.05);
