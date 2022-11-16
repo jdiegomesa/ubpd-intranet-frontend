@@ -2,13 +2,13 @@
     overflow: hidden;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     transition-duration: .5s;
     width: 900px;
     border-bottom: solid var(--aguamarina_transparente) 2px;
     margin: var(--fuente0) 0;
     padding: var(--fuente0) 0;
+    position: relative;
     @media(--tablet){
       width: 64.28vw;
       margin-bottom: 1.7vw;
@@ -20,6 +20,25 @@
       padding: var(--fuente0_mobile) 0;
       margin-bottom: 6vw;
       border-bottom-width: .5vw;
+    }
+    &-flag{
+      position: absolute;
+      right: 0;
+      top: var(--fuente0);
+      padding: 8px;
+      background-color: var(--aguamarina_transparente);
+      color: #fff;
+      font-family: var(--texto);
+      font-weight: var(--regular);
+      font-size: var(--fuente0);
+      @media(--tablet){
+        top: var(--fuente0_tablet);
+        font-size: var(--fuente0_tablet);
+      }
+      @media(--mobile){
+        top: 0;
+        font-size: var(--fuente-1_mobile);
+      }
     }
     &-icon{
       &-image{
@@ -63,18 +82,37 @@
       @media(--mobile){
         padding: 0 5vw;
       }
+      &-subtext{
+        color: var(--color_texto_claro);
+        line-height: 1.2;
+        font-family: var(--texto);
+        font-weight: var(--regular);
+        font-size: var(--fuente-1);
+        margin-bottom: var(--fuente-3);
+        @media(--tablet){
+          font-size: var(--fuente-1_tablet);
+          margin-bottom: var(--fuente-3_tablet);
+        }
+        @media(--mobile){
+          font-size: var(--fuente-2_mobile);
+          margin-bottom: var(--fuente-3_mobile);
+        }
+      }
       &-title{
         font-family: var(--texto);
         font-weight: var(--black);
         color: var(--azul_oscuro);
         font-size: var(--fuente2);
-        margin: 0 0 var(--fuente-1) 0;
+        margin: 0 0 var(--fuente-2) 0;
         @media(--tablet){
-          margin-bottom: var(--fuente-1_tablet);
+          margin-bottom: var(--fuente-2_tablet);
         }
         @media(--mobile){
           font-size: var(--fuente1_mobile);
-          margin-bottom: var(--fuente-2_mobile);
+          margin-bottom: var(--fuente-3_mobile);
+        }
+        & span{
+          font-size: var(--fuente0);
         }
       }
       &-text{
@@ -92,14 +130,13 @@
       }
       &-subtitle{
         color: var(--color_texto);
-        line-height: 1.4;
         font-family: var(--texto);
         font-weight: var(--regular);
         font-size: var(--fuente-1);
-        margin: var(--fuente-2) 0 0 0;
+        margin: var(--fuente-3) 0 0 0;
         @media(--tablet){
           font-size: var(--fuente-1_tablet);
-          margin-top: var(--fuente-2_tablet);
+          margin-top: var(--fuente-3_tablet);
         }
         @media(--mobile){
           font-size: var(--fuente-2_mobile);

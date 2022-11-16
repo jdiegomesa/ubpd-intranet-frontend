@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+  <title>UBPD</title>
+</head>
+<body>
+
+  <!-- INICIO MENU ABIERTO -->
+  <div class="Menu" id="menu">
+
+    <div class="Menu-eco">
+      <a class="Menu-eco-cont" href="#">
+        <img class="Menu-eco-cont-img" src="./assets/eco.svg" alt="busqueda">
+      </a>                                            
+      <p class="Menu-eco-text">Punto verde</p>                                               
+    </div>                                                     
+    <div class="Menu-ayuda Menu-ayuda-active" id="ayuda">
+        <div class="Menu-ayuda-cont Menu-ayuda-cont-close" onclick="abrirMenu()">
+          <div class="Menu-ayuda-cont-blanco" id="boton">
+            <img class="Menu-ayuda-cont-blanco-img Menu-ayuda-cont-blanco-img-open" id="busqueda" src="./assets/plataformas.svg" alt="busqueda">
+            <img class="Menu-ayuda-cont-blanco-img Menu-ayuda-cont-blanco-img-close"id="cerrar" src="./assets/cerrar.svg" alt="busqueda">
+          </div>                                            
+        </div> 
+        <p class="Menu-ayuda-text">Nuestras plataformas</p>                                               
+    </div>                                                     
+                                                               
+    <div class="Menu-fondo" id="fondo"></div>                                
+                                                               
+    <div class="Menu-list" id="botones">                             
+        <div class="Menu-list-item">            
+            <p class="Menu-list-item-name">Otras herramientas </p>       
+            <div class="Menu-list-item-cont">                             
+              <img class="Menu-list-item-cont-img" src="./assets/servicios.svg" alt=""/>   
+            </div>                                             
+        </div>
+        <div class="Menu-list-item">
+          <p class="Menu-list-item-name">SIDOBU</p>            
+          <div class="Menu-list-item-cont">                             
+            <img class="Menu-list-item-cont-img" src="./assets/logo_sidobu.svg" alt=""/> 
+          </div> 
+        </div>                              
+        <div class="Menu-list-item">                
+            <p class="Menu-list-item-name">Mesa de servicio </p>            
+            <div class="Menu-list-item-cont">                             
+              <img class="Menu-list-item-cont-img" src="./assets/logo_mesa_servicios.svg" alt=""/> 
+            </div>                                             
+        </div>                                       
+        <div class="Menu-list-item">    
+            <p class="Menu-list-item-name">Google Workspace </p>
+            <div class="Menu-list-item-cont">                             
+              <img class="Menu-list-item-cont-img" src="./assets/workspace.svg" alt=""/>      
+            </div>                                          
+        </div>                                                                                                  
+    </div>
+  </div>
+  <!-- FIN MENU ABIERTO -->
+  <!-- Header -->
+  <header class="UBPDHeader" id="UBPDheader">
+    <div class="UBPDHeader-brand">
+      <a href="/" class="UBPDHeader-brand-logo">
+        <!-- Logo de la UBPD -->
+         <picture>
+            <!-- Imagen móvil -->
+            <source 
+              srcset="./assets/logo_ubpd_blanco_ver.svg"
+              media="(max-width: 600px)"
+            />
+            <!-- Imagen de escritorio -->
+            <source 
+              srcset="./assets/logo_ubpd_blanco_hor.svg"
+              media="(min-width: 600px)"
+            />
+            <img src="./assets/logo_ubpd_blanco_hor.svg" alt="Logo UBPD" />
+          </picture>
+      </a>
+      <div class="UBPDHeader-brand-cont">
+        <img class="UBPDHeader-brand-cont-titulo" src="./assets/logo_intranet.svg" alt="Intranet">
+      </div>
+      <!-- Boton abrir menú en móvil -->
+      <button aria-label="Botón Abrir/Cerrar" class="UBPDHeader-button" onclick="UBPDopen('UBPDnav'); UBPDopen('UBPDopenbutton');" id="UBPDopenbutton" role="button">
+        <img class="UBPDHeader-button-open" src="./assets/boton_menu.svg" alt="Ícono de menú">
+        <img class="UBPDHeader-button-close" src="./assets/close_button.svg" alt="Ícono de cerrar">
+      </button>
+      <div class="UBPDHeader-brand-search">
+        <!-- Agregar acción de búsqueda -->
+        <form action="">
+          <label for="buscador_UBPD" class="hidden">Buscar en el UBPD</label>
+          <input id="buscador_UBPD" type="text" size="20" name="keywords" placeholder="Buscar" class="UBPDHeader-brand-search-input">
+          <input type="submit" value="Buscar" aria-label="Buscar" class="UBPDHeader-brand-search-button">
+        </form>
+      </div>
+    </div>
+  </header>
+  <!-- FIN Header -->
+  <!-- Navegacion -->
+  <nav class="UBPDNav" id="UBPDnav" role="navigation">
+    
+    <ul role="menubar" class="UBPDNav-menu">
+      <li class="UBPDNav-menu-item" id="UBPDuno" role="menuitem" aria-haspopup="true">
+        <div class="UBPDNav-menu-item-corner" onclick="UBPDopen('UBPDuno', 'UBPDNav-menu-item');"></div>
+        <a href="#" role="link">La UBPD</a>
+        <ul class="UBPDNav-menu-item-submenu" role="menu">
+          <div class="UBPDNav-menu-item-submenu-container">
+            <li class="UBPDNav-menu-item-submenu-item" role="menuitem">
+              <a href="https://www.UBPD.gov.co/sala-de-prensa/Paginas/Comunicados.aspx#Default=%7B%22k%22:%22SPContentType:Slider%20de%20Noticias%22,%22o%22:%5B%7B%22d%22:1,%22p%22:%22UBPDFechaPublicacion%22%7D%5D%7D">Reseña de la UBPD</a>
+            </li>
+            <li class="UBPDNav-menu-item-submenu-item" role="menuitem">
+              <a href="https://www.flickr.com/photos/142236467@N07/" target="_blank">Misión y Visión</a>
+            </li>
+            <li class="UBPDNav-menu-item-submenu-item" role="menuitem">
+              <a href="https://soundcloud.com/redes-planeacion-nacional" target="_blank">Perfil de Nuestra Directora</a>
+            </li>
+            <li class="UBPDNav-menu-item-submenu-item" role="menuitem">
+              <a href="#" target="_blank">Equipo Directivo</a>
+            </li>
+            <li class="UBPDNav-menu-item-submenu-item" role="menuitem">
+              <a href="https://www.youtube.com/channel/UCx25Fx8FD1URCYzlGVyLZ0w" target="_blank">Organigrama</a>
+            </li>
+          </div>
+        </ul>
+      </li>
+      <li class="UBPDNav-menu-item" id="UBPDentidad" role="menuitem" aria-haspopup="true">
+        <div class="UBPDNav-menu-item-corner" onclick="UBPDopen('UBPDentidad', 'UBPDNav-menu-item');"></div>
+        <a href="#" role="link">La Búsqueda es Contigo</a>
+        <ul class="UBPDNav-menu-item-submenu" role="menu">
+          <div class="UBPDNav-menu-item-submenu-container">
+            <li class="UBPDNav-menu-item-submenu-item" role="menuitem">
+              <a href="./directivos.html">Directivos</a>
+            </li>
+            <li class="UBPDNav-menu-item-submenu-item" role="menuitem">
+              <a href="./direcciones.html">Direcciones</a>
+            </li>
+            <li class="UBPDNav-menu-item-submenu-item" role="menuitem">
+              <a href="https://www.UBPD.gov.co/UBPDN/la-entidad/misi%C3%B3n-visi%C3%B3n-origen">Misión, Visión, Origen</a>
+            </li>
+            <li class="UBPDNav-menu-item-submenu-item" role="menuitem">
+              <a href="https://www.UBPD.gov.co/UBPDN/la-entidad/funciones-UBPD">Funciones UBPD</a>
+            </li>
+            <li class="UBPDNav-menu-item-submenu-item" role="menuitem">
+              <a href="https://www.UBPD.gov.co/UBPDN/la-entidad/c%C3%B3digo-de-integridad">Código de integridad</a>
+            </li>
+            <li class="UBPDNav-menu-item-submenu-item" role="menuitem">
+              <a href="https://www.UBPD.gov.co/UBPDN/la-entidad/objetivos">Objetivos</a>
+            </li>
+            <li class="UBPDNav-menu-item-submenu-item" role="menuitem">
+              <a href="https://www.datos.gov.co/browse?Informaci%C3%B3n-de-la-Entidad_Nombre-de-la-Entidad=Departamento+Nacional+de+Planeaci%C3%B3n&q=UBPD&sortBy=relevance&utf8=%E2%9C%93">Datos abiertos</a>
+            </li>
+            <li class="UBPDNav-menu-item-submenu-item" role="menuitem">
+              <a href="https://www.UBPD.gov.co/UBPDN/la-entidad/factura-electr%C3%B3nica">Factura electrónica</a>
+            </li>
+          </div>
+        </ul>
+      </li>
+      <li class="UBPDNav-menu-item" id="UBPDnormativa" role="menuitem" aria-haspopup="true">
+        <div class="UBPDNav-menu-item-corner" onclick="UBPDopen('UBPDnormativa', 'UBPDNav-menu-item');"></div>
+        <a role="link" href="./normativa.html">Cuidado UBPD</a>
+        <ul class="UBPDNav-menu-item-submenu" role="menu">
+          <div class="UBPDNav-menu-item-submenu-container">
+            <li class="UBPDNav-menu-item-submenu-item" role="menuitem">
+              <a href="./decreto.html">Decreto único reglamentario 1082 de 26 de mayo 2015</a>
+            </li>
+            <li class="UBPDNav-menu-item-submenu-item" role="menuitem">
+              <a href="https://www.UBPD.gov.co/UBPDN/normativa/proyectos-de-normatividad">Proyectos de normatividad </a>
+            </li>
+            <li class="UBPDNav-menu-item-submenu-item" role="menuitem">
+              <a href="https://www.UBPD.gov.co/UBPDN/normativa/normograma">Normograma</a>
+            </li>
+            <li class="UBPDNav-menu-item-submenu-item" role="menuitem">
+              <a href="https://www.sgr.gov.co/normativa.aspx">Sistema General de Regalías</a>
+            </li>
+            <li class="UBPDNav-menu-item-submenu-item" role="menuitem">
+              <a href="https://www.UBPD.gov.co/UBPDN/normativa/leyes-plan-nacional-de-desarrollo">Leyes Plan Nacional de Desarrollo</a>
+            </li>
+          </div>
+        </ul>
+      </li>
+      <li class="UBPDNav-menu-item" id="UBPDprensa" role="menuitem" aria-haspopup="true">
+        <div class="UBPDNav-menu-item-corner" onclick="UBPDopen('UBPDprensa', 'UBPDNav-menu-item');"></div>
+        <a href="./prensa.html" role="link">Memoria y conocimiento</a>
+        <ul class="UBPDNav-menu-item-submenu" role="menu">
+          <div class="UBPDNav-menu-item-submenu-container">
+            <li class="UBPDNav-menu-item-submenu-item" role="menuitem">
+              <a href="https://www.UBPD.gov.co/sala-de-prensa/Paginas/Comunicados.aspx#Default=%7B%22k%22:%22SPContentType:Slider%20de%20Noticias%22,%22o%22:%5B%7B%22d%22:1,%22p%22:%22UBPDFechaPublicacion%22%7D%5D%7D">Comunicados</a>
+            </li>
+            <li class="UBPDNav-menu-item-submenu-item" role="menuitem">
+              <a href="https://www.flickr.com/photos/142236467@N07/" target="_blank">Imágenes</a>
+            </li>
+            <li class="UBPDNav-menu-item-submenu-item" role="menuitem">
+              <a href="https://soundcloud.com/redes-planeacion-nacional" target="_blank">Audios</a>
+            </li>
+            <li class="UBPDNav-menu-item-submenu-item" role="menuitem">
+              <a href="https://www.youtube.com/channel/UCx25Fx8FD1URCYzlGVyLZ0w" target="_blank">Videos</a>
+            </li>
+            <li class="UBPDNav-menu-item-submenu-item" role="menuitem">
+              <a href="https://www.youtube.com/channel/UCx25Fx8FD1URCYzlGVyLZ0w" target="_blank">UBPD Noticias</a>
+            </li>
+            <li class="UBPDNav-menu-item-submenu-item" role="menuitem">
+              <a href="https://www.UBPD.gov.co/UBPDN/prensa/presentaciones">Presentaciones</a>
+            </li>
+            <li class="UBPDNav-menu-item-submenu-item" role="menuitem">
+              <a href="https://www.UBPD.gov.co/UBPDN/prensa/publicaciones">Publicaciones</a>
+            </li>
+          </div>
+        </ul>
+      </li>
+
+    </ul>
+    <div class="UBPDHeader-brand-search UBPDHeader-brand-search-mobile">
+      <!-- Agregar acción de búsqueda -->
+      <form action="">
+        <label for="buscador_UBPD" class="hidden">Buscar en el UBPD</label>
+        <input id="buscador_UBPD" type="text" size="20" name="keywords" placeholder="Buscar" class="UBPDHeader-brand-search-input">
+        <input type="submit" value="Buscar" aria-label="Buscar" class="UBPDHeader-brand-search-button">
+      </form>
+    </div>
+  </nav>
+  <!-- FIN Navegacion -->
+  <main>
+  <div class="UBPDPost">
+    <h1 class="UBPDPost-title">Título de la noticia interna de la UBPD que puede ir a dos líneas</h1>
+    <img src="./img/imagen_prueba.jpg" alt="" class="UBPDPost-image">
+    <div class="UBPDPost-text">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae reiciendis tempore sequi, consectetur sit molestias ab rerum totam modi! Corrupti dolorem deleniti, magni illum quo repellendus consectetur sint explicabo laudantium?</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae reiciendis tempore sequi, consectetur sit molestias ab rerum totam modi! Corrupti dolorem deleniti, magni illum quo repellendus consectetur sint explicabo laudantium?</p>
+    </div>
+    <div>
+      <a href="#CONTENIDO">
+        <article class="UBPDDocument">
+          <!-- Tipo de proceso -->
+          <p class="UBPDDocument-flag">Apoyo</p>
+          <!-- Ícono del documento -->
+          <div class="UBPDDocument-icon">
+            <img src="./assets/pdf_icon.png" alt="" class="UBPDDocument-icon-image">
+          </div>
+          <div class="UBPDDocument-info">
+            <!-- Versión -->
+            <p class="UBPDDocument-info-subtext">Versión 2</p>
+            <!-- Título del documento - Código del documento -->
+            <h3 class="UBPDDocument-info-title">Caracterización Gestión Documental  <span>( GDO-CR-001 )</span></h3>
+            <!-- Sumario del contenido -->
+            <p class="UBPDDocument-info-text">Gestión administrativa / Gestión Documental</p>
+            <!-- Fecha de aprobación -->
+            <p class="UBPDDocument-info-subtitle">18 de noviembre 2020</p>
+          </div>
+        </article>
+      </a>
+      <a href="#CONTENIDO">
+        <article class="UBPDDocument">
+          <!-- Ícono del documento -->
+          <div class="UBPDDocument-icon">
+            <img src="./assets/xlsx_icon.png" alt="" class="UBPDDocument-icon-image">
+            <p class="UBPDDocument-icon-size">5 Kb</p>
+          </div>
+          <div class="UBPDDocument-info">
+            <!-- Título del contenido -->
+            <h3 class="UBPDDocument-info-title">Nombre de la normativa</h3>
+            <!-- Sumario del contenido -->
+            <p class="UBPDDocument-info-text">Decreto No. xxx de xx Agosto de xxxx - Por medio de la cual, se declara con motivo de la numero xxx de la normativa 0000.</p>
+            <!-- Subtítulo/Fecha del contenido -->
+            <p class="UBPDDocument-info-subtitle">26 de agosto 2020</p>
+          </div>
+        </article>
+      </a>
+    </div>
+
+
+
+
+    <section class="UBPDPost-share">
+      <h2 class="UBPDPost-share-title">Compartir</h2>
+      <div class="UBPDPost-share-icons">
+        <a href="#" class="UBPDPost-share-icons-item">
+          <img src="./assets/boton_link.svg" alt="" class="UBPDPost-share-icons-item-icon">
+        </a>
+        <a href="#" class="UBPDPost-share-icons-item">
+          <img src="./assets/boton_mail.svg" alt="" class="UBPDPost-share-icons-item-icon">
+        </a>
+        <a href="#" class="UBPDPost-share-icons-item">
+          <img src="./assets/boton_whatsapp.svg" alt="" class="UBPDPost-share-icons-item-icon">
+        </a>
+      </div>
+    </section>
+  </div>
+
+</main>
+  <!-- Footer -->
+  <footer class="UBPDFooter">
+    <ul class="UBPDFooter-links">
+      <li>
+        <a href="">Elemento de la lista</a>
+      </li>
+      <li>
+        <a href="">Elemento de la lista</a>
+      </li>
+      <li>
+        <a href="">Elemento de la lista</a>
+      </li>
+      <li>
+        <a href="">Elemento de la lista</a>
+      </li>
+    </ul>
+    <!-- Logo de la UBPD -->
+    <img class="UBPDFooter-logo" src="./assets/logo_ubpd_blanco_hor.svg" alt="Logo UBPD" />
+  </footer>
+  <!-- FIN Footer -->
+
+  <script type="text/javascript" src="./js/UBPD_scripts.js"></script>
+
+  <section id="app"></section>
+  <script type="text/javascript" src="./modules.js"></script>
+  <!--<script type="text/javascript" src="./js/app.aeb474aef2b58972cb1d.js"></script>-->
+  <script type="text/javascript" src="http://localhost:9000/js/app.js"></script>
+   <!-- Inicio javascript -->
+   <script>
+    // Función para abrir elementos
+    // Primer parámetro: id del elemento al que le agregará la clase 'opened'
+   // Segundo parámetro (opcional): clase de los elementos a los que les quitará la clase 'opened'
+    const UBPDopen = (el, cl) => {
+      let element = document.getElementById(el);
+      if(cl){
+        let sameClass = document.getElementsByClassName(cl);
+        for(i = 0; i < sameClass.length; i++){
+          if(sameClass[i] != element){
+            sameClass[i].classList.remove('opened');
+          }
+        }
+      }
+      element.classList.toggle('opened');
+      document.activeElement.blur();
+    }
+
+    function abrirMenu(){
+      UBPDopen('boton'); 
+      UBPDopen('fondo'); 
+      UBPDopen('botones');
+    }
+  </script>
+  <!-- Fin javascript -->
+</body>
+</html>
