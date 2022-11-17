@@ -225,29 +225,80 @@
   <main>
   <div class="UBPDPost">
     <h1 class="UBPDPost-title">Título de la noticia interna de la UBPD que puede ir a dos líneas</h1>
-    <img src="./img/imagen_prueba.jpg" alt="" class="UBPDPost-image">
+    <div class="UBPDPost-image">
+      <img src="./img/imagen_prueba.jpg" alt="" class="UBPDPost-image-img">
+    </div>
     <div class="UBPDPost-text">
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae reiciendis tempore sequi, consectetur sit molestias ab rerum totam modi! Corrupti dolorem deleniti, magni illum quo repellendus consectetur sint explicabo laudantium?</p>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae reiciendis tempore sequi, consectetur sit molestias ab rerum totam modi! Corrupti dolorem deleniti, magni illum quo repellendus consectetur sint explicabo laudantium?</p>
     </div>
-    <div>
+    <div class="UBPDDocuments">
+      <h2 class="UBPDDocuments-title">Documentos</h2>
+      <form class="UBPDDocuments-search" role="search" action="https://intranet.ubpdbusquedadesaparecidos.co/" method="get" id="searchform" data-np-checked="1" data-np-autofill-type="other">
+        <input class="UBPDDocuments-search-input" type="text" name="s" placeholder="Buscar documento" data-np-checked="1">
+        <input type="hidden" name="post_type" value="contjuridico" data-np-checked="1"> <!-- // hidden 'products' value -->
+        <input class="UBPDDocuments-search-button" type="submit" alt="Search" value="Search" data-np-checked="1">
+      </form>
+      <!-- Documento planeación -->
       <a href="#CONTENIDO">
         <article class="UBPDDocument">
-          <!-- Tipo de proceso -->
-          <p class="UBPDDocument-flag">Apoyo</p>
+          <!-- Bandera tipo de documento -->
+          <p class="UBPDDocument-flag">OAP - Sistema Integrado de Gestión</p>
+          <!-- Ícono del documento -->
+          <div class="UBPDDocument-icon">
+            <img src="./assets/pdf_icon.png" alt="" class="UBPDDocument-icon-image">
+            <p class="UBPDDocument-icon-size">Versión 2</p>
+          </div>
+          <div class="UBPDDocument-info">
+            <!-- Tipo de proceso -->
+            <p class="UBPDDocument-info-subtext">Procesos de apoyo</p>
+            <!-- Título del documento - Código del documento -->
+            <h3 class="UBPDDocument-info-title">Caracterización Gestión Documental  <span>( GDO-CR-001 )</span></h3>
+            <!-- Proceso / Subproceso -->
+            <p class="UBPDDocument-info-text">Gestión administrativa / Gestión Documental</p>
+            <!-- Fecha de aprobación -->
+            <p class="UBPDDocument-info-subtitle">18 de noviembre 2020</p>
+          </div>
+        </article>
+      </a>
+      <!-- Circular jurídica -->
+      <a href="#CONTENIDO">
+        <article class="UBPDDocument">
+          <!-- Bandera tipo de documento -->
+          <p class="UBPDDocument-flag">OAJ - Circular</p>
           <!-- Ícono del documento -->
           <div class="UBPDDocument-icon">
             <img src="./assets/pdf_icon.png" alt="" class="UBPDDocument-icon-image">
           </div>
           <div class="UBPDDocument-info">
-            <!-- Versión -->
-            <p class="UBPDDocument-info-subtext">Versión 2</p>
-            <!-- Título del documento - Código del documento -->
-            <h3 class="UBPDDocument-info-title">Caracterización Gestión Documental  <span>( GDO-CR-001 )</span></h3>
-            <!-- Sumario del contenido -->
-            <p class="UBPDDocument-info-text">Gestión administrativa / Gestión Documental</p>
-            <!-- Fecha de aprobación -->
-            <p class="UBPDDocument-info-subtitle">18 de noviembre 2020</p>
+            <!-- ID circular -->
+            <p class="UBPDDocument-info-subtext">Circular 017 del 14 de octubre de 2021</p>
+            <!-- Tema -->
+            <h3 class="UBPDDocument-info-title">La acción de reparación directa como mecanismo para proteger al Estado por los daños y lesiones causados por particulares a sus derechos y bienes.</h3>
+            <!-- Sinopsis -->
+            <p class="UBPDDocument-info-text">La Oficina Asesora Jurídica socializa los lineamientos expedidos por la Agencia Nacional de Defensa Jurídica del Estado respecto a la "Pretensión especial de reparación directa por daños y lesiones a derechos y bienes estatales - El Estado y las entidades públicas como víctimas y sus derechos a la tutela judicial efectiva y al debido proceso".</p>
+          </div>
+        </article>
+      </a>
+      <!-- Concepto jurídico -->
+      <a href="#CONTENIDO">
+        <article class="UBPDDocument">
+          <!-- Bandera tipo de documento -->
+          <p class="UBPDDocument-flag">OAJ - Concepto</p>
+          <!-- Ícono del documento -->
+          <div class="UBPDDocument-icon">
+            <img src="./assets/pdf_icon.png" alt="" class="UBPDDocument-icon-image">
+            <p class="UBPDDocument-icon-size">Comunicación</p>
+          </div>
+          <div class="UBPDDocument-info">
+            <!-- Tema -->
+            <p class="UBPDDocument-info-subtext">Acceso a la información</p>
+            <!-- Subtema -->
+            <h3 class="UBPDDocument-info-title">Nombre de la normativa</h3>
+            <!-- Sinopsis -->
+            <p class="UBPDDocument-info-text">Decreto No. xxx de xx Agosto de xxxx - Por medio de la cual, se declara con motivo de la numero xxx de la normativa 0000.</p>
+            <!-- Radicado -->
+            <p class="UBPDDocument-info-subtitle">Radicado 100-3-201902401</p>
           </div>
         </article>
       </a>
@@ -268,6 +319,17 @@
           </div>
         </article>
       </a>
+      <nav class="navigation UBPDPager" aria-label="Entradas">
+        <h2 class="screen-reader-text">Navegación de entradas</h2>
+        <div class="nav-links">
+          <div class="nav-previous">
+            <a href="https://intranet.ubpdbusquedadesaparecidos.co/conceptosjuridicos/page/3/"> Atrás &gt;</a>
+          </div>
+          <div class="nav-next">
+            <a href="https://intranet.ubpdbusquedadesaparecidos.co/conceptosjuridicos/">&lt; Adelante</a>
+          </div>
+        </div>
+      </nav>
     </div>
 
 

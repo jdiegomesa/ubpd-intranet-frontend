@@ -1,10 +1,122 @@
+.UBPDDocuments{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1280px;
+  margin: 0;
+  padding: 12px 0;
+  flex-wrap: wrap;
+  @media(--tablet){
+    width: 90vw;
+    padding: 1vw 0;
+  }
+  @media(--mobile){
+    width: 90vw;
+  }
+  &-title{
+    display: block;
+    width: 100%;
+    font-family: var(--texto);
+    font-weight: var(--black);
+    color: var(--aguamarina);
+    font-size: var(--fuente2);
+    margin: 0 0 var(--fuente-2) 0;
+    @media(--tablet){
+      margin-bottom: var(--fuente-2_tablet);
+    }
+    @media(--mobile){
+      font-size: var(--fuente1_mobile);
+      margin-bottom: var(--fuente-3_mobile);
+    }
+  }
+  &-search{
+    position: relative;
+    width: 350px;
+    align-self: flex-start;
+    margin: var(--fuente0) 0 var(--fuente0) 140px;
+    @media(--tablet){
+      width: 30vw;
+    }
+    @media(--mobile){
+      display: block;
+      width: 90vw;
+      margin: 0 auto;
+      margin-bottom: 5vh;
+    }
+    & a{
+      width: 100%;
+      text-align: right;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: var(--texto);
+      font-weight: var(--regular);
+    }
+    &-input{
+      box-sizing: border-box;
+      font-family: var(--texto);
+      font-weight: var(--regular);
+      color: var(--gris);
+      font-size: 14px;
+      padding: 6px 40px 6px 16px;
+      width: 100%;
+      border: 1px solid var(--gris);
+      border-radius: 8px;
+      @media(--tablet){
+        font-size: 1.3vw;
+        padding: .7vw 3.7vw .6vw 1.4vw;
+        border-width: .1vw;
+        border-radius: 1vw;
+      }
+      @media(--mobile){
+        font-size: 4.5vw;
+        padding: 1.5vw 10vw 1.5vw 2vw;
+        border-width: .2vw;
+        border-radius: 1vw;
+      }
+      &:focus, &:focus-visible{
+        border: 2px solid var(--azulclaro);
+
+      }
+    }
+    &-button{
+      background: transparent url('./assets/lupa.svg') center no-repeat;
+      background-size: contain;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      font-size: 0;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: 0 auto;
+      width: 25px;
+      height: 100%;
+      right: 4px;
+      min-width:0;
+      padding:0;
+      @media(--tablet){
+        width: 2vw;
+        height: 2vw;
+        right: .4vw;
+      }
+      @media(--mobile){
+        width: 7vw;
+        right: 1vw;
+      }
+    }
+    & div{
+      position: relative;
+    }
+  }
+}
 .UBPDDocument{
     overflow: hidden;
     display: flex;
     flex-direction: row;
     align-items: center;
     transition-duration: .5s;
-    width: 900px;
+    width: 1000px;
     border-bottom: solid var(--aguamarina_transparente) 2px;
     margin: var(--fuente0) 0;
     padding: var(--fuente0) 0;
@@ -24,7 +136,7 @@
     &-flag{
       position: absolute;
       right: 0;
-      top: var(--fuente0);
+      top: 0;
       padding: 8px;
       background-color: var(--aguamarina_transparente);
       color: #fff;
@@ -55,19 +167,19 @@
         }
       }
       &-size{
-        color: var(--color_texto);
+        color: var(--color_texto_claro);
         line-height: 1.4;
         font-family: var(--texto);
         font-weight: var(--regular);
-        font-size: var(--fuente1);
+        font-size: var(--fuente-1);
         margin-top: calc(var(--fuente1) / 2);
         text-align: center;
         @media(--tablet){
-          font-size: var(--fuente1_tablet);
+          font-size: var(--fuente-1_tablet);
           margin-top: calc(var(--fuente1_tablet) / 2);
         }
         @media(--mobile){
-          font-size: var(--fuente1_mobile);
+          font-size: var(--fuente-1_mobile);
           margin-top: calc(var(--fuente1_mobile) / 2);
         } 
       }
@@ -89,6 +201,7 @@
         font-weight: var(--regular);
         font-size: var(--fuente-1);
         margin-bottom: var(--fuente-3);
+        text-transform: uppercase;
         @media(--tablet){
           font-size: var(--fuente-1_tablet);
           margin-bottom: var(--fuente-3_tablet);
