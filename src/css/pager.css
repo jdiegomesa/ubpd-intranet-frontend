@@ -1,12 +1,13 @@
 .UBPDPager, .UBPDPager .nav-links{
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
   justify-content: center;
-  padding: 32px 0;
+  padding: 32px 0 var(--fuente0);
   width: 100%;
   max-width: 1280px;
   @media(--tablet){
-    padding: 2.5vw 0;
+    padding: 2.5vw 0 var(--fuente0_tablet);
     max-width: 90vw;
   }
   @media(--mobile){
@@ -42,7 +43,7 @@
       }
     }
   }
-  &-numbers{
+  &-pages{
     color: var(--azul_oscuro);
     font-family: var(--texto);
     font-weight: var(--regular);
